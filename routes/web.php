@@ -22,3 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('questions','QuestionsController');
+//php artisan make:controller QuestionsController --resource --model=Question
